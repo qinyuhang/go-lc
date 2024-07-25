@@ -7,10 +7,10 @@ import (
 )
 
 func TestIsSameTree(t *testing.T) {
-    t1 := dataStruct.MakeTreeFromLevel([]int{1, 2, 3, 4, 5, 6, 7, 8, 9})
-    t2 := dataStruct.MakeTreeFromLevel([]int{1, 2, 3, 4, 5, 6, 7, 8})
-    t3 := dataStruct.MakeTreeFromLevel([]int{1, 2, 3, 4, 5, 6, 7, 8, 9})
-    t4 := dataStruct.MakeTreeFromLevel([]int{1, 2, 3, 4, 5, 6, 7, 9})
+    t1 := dataStruct.MakeTreeFromLevel([]interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9})
+    t2 := dataStruct.MakeTreeFromLevel([]interface{}{1, 2, 3, 4, 5, 6, 7, 8})
+    t3 := dataStruct.MakeTreeFromLevel([]interface{}{1, 2, 3, 4, 5, 6, 7, 8, 9})
+    t4 := dataStruct.MakeTreeFromLevel([]interface{}{1, 2, 3, 4, 5, 6, 7, 9})
 
     assert.Equal(t, IsSameTree(t1, t3), true)
     assert.Equal(t, IsSameTree(t1, t2), false)
