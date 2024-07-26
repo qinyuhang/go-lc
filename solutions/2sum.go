@@ -1,6 +1,6 @@
 package solutions
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
     m := make(map[int]int)
 
     for i := 0; i < len(nums); i++ {
@@ -11,4 +11,8 @@ func TwoSum(nums []int, target int) []int {
         }
     }
     return nil
+}
+
+func TwoSum(nums []int, target int) []int {
+    return twoSum(nums, target)
 }
