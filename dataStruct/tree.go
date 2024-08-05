@@ -1,5 +1,10 @@
 package dataStruct
 
+type TestCase[T any, P any] struct {
+    input    T
+    expected P
+}
+
 /**
  * Definition for a binary tree node.
  */
